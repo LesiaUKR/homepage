@@ -272,3 +272,73 @@ body {
 .additional-info__education-university {
   margin-bottom: 15px;
 }
+
+.bonia-easter-egg {
+  margin-top: 12px;
+}
+
+.bonia-easter-egg__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-decoration-color);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bonia-easter-egg__trigger::-webkit-details-marker {
+  display: none;
+  content: "";
+}
+
+.bonia-easter-egg__trigger::marker {
+  content: "";
+}
+
+.bonia-easter-egg__paw {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.bonia-easter-egg__content {
+  margin-top: 16px;
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background: #fffaf3;
+}
+
+.bonia-easter-egg__title {
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.bonia-easter-egg__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.bonia-easter-egg__image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  border: 3px solid var(--text-decoration-color);
+  transition: object-position 1.5s ease-in-out;
+}
+
+.bonia-easter-egg__image:hover {
+  object-position: top;
+}
+
+.bonia-easter-egg__quote {
+  margin-top: 16px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-style: italic;
+}
